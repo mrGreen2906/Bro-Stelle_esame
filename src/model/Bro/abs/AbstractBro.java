@@ -32,6 +32,7 @@ public abstract class AbstractBro {
         aumentaVita();
         this.attacco.aumentaAttacco();
 
+
     }
 
     protected abstract void aumentaVita();
