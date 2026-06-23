@@ -14,5 +14,4 @@ public class Blast extends AbstractAoEAttacco {
     public AtkTraiettoriaEnum getTraiettoria() {
         return AtkTraiettoriaEnum.TERRENO;
     }
-
 }

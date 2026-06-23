@@ -39,6 +39,7 @@ public abstract class AbstractAttacco implements AttaccoInt {
 
     public abstract AtkPortataEnum getPortata();
     public abstract AtkTraiettoriaEnum getTraiettoria();
+    public abstract int pixelTraiettoria();
 
 
 

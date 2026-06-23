@@ -34,7 +34,7 @@ public abstract class AbstractBro implements BroInt {
 
     public void aumentaLivello() throws LivelloMaxException {
 
-        this.attacco.incrementtAttacco();
+        this.attacco.incrementAttacco();
         if (this.livello == 11)
             throw new LivelloMaxException();
 

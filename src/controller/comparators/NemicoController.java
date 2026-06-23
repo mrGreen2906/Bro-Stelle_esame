@@ -1,6 +1,8 @@
 package controller.comparators;
 
+import javafx.scene.control.Alert;
 import model.Nemico;
+import model.exceptions.NemicoIsDeadException;
 import view.NemicoView;
 
 public class NemicoController {
@@ -16,4 +18,22 @@ public class NemicoController {
         this.m.risorgi();
         this.v.aggiornaHp(this.m.getInfo());
     }
+
+    public void applicDanni(int d){
+        try {
+            this.m.applyDamage(d);
+
+                this.v.aggiornaHp(this.m.getInfo());
+        } catch (NemicoIsDeadException e) {
+            Alert a = new Alert(Alert.AlertType.ERROR);
+            a.setContentText("Il bersaglio è stato eliminato");
+            a.showAndWait();
+            this.refresh();
+        }
+    }
+
+    public NemicoView getV() {
+        return v;
+    }
+
 }

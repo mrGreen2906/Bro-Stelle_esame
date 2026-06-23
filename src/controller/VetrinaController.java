@@ -32,16 +32,17 @@ public class VetrinaController {
 
     private void drawView(){
         this.v = new VetrinaView();
+        this.v.setSpacing(10);
         for(BroController b: this.bro)
             this.v.getChildren().add(b.getV());
 
-        MainView.getInstance().setTop(this.v);
     }
 
     public void ordinaPerNome(){
         this.bro.sort(new ComparatorByNomeController());
         this.m.sort(new ComparatorByNome());
         drawView();
+        MainView.getInstance().setTop(this.v);
 
     }
 
@@ -49,6 +50,11 @@ public class VetrinaController {
         this.bro.sort(new ComparatorByVitaController());
         this.m.sort(new ComparatorByVita());
         drawView();
+        MainView.getInstance().setTop(this.v);
 
+    }
+
+    public VetrinaView getV(){
+        return this.v;
     }
 }

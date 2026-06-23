@@ -5,6 +5,7 @@ import javafx.scene.paint.Color;
 import model.Bro.BroInt;
 import model.exceptions.LivelloMaxException;
 import view.BroView;
+import view.MainView;
 
 public class BroController {
 
@@ -13,7 +14,7 @@ public class BroController {
 
     public BroController(BroInt b){
         this.m=b;
-        this.v=new BroView(m.getInfo(), m.getInfoVitaVelocita(), m.getInfoAttacco(), this);
+        this.v=new BroView(m.getNome(), m.getColor(),this);
     }
 
     public BroView getV() {
@@ -39,14 +40,10 @@ public class BroController {
     public void attacco(){
 
     }
-    public void incrementLvl(){
 
-        try {
-            this.m.aumentaLivello();
-        } catch (LivelloMaxException e) {
-            Alert a = new Alert(Alert.AlertType.ERROR);
-            a.setContentText("Livello massimo raggiunto");
-            a.showAndWait();
-        }
+
+    public void selezionaBro(){
+        BroCentralController br = new BroCentralController(this.getM());
+        MainView.getInstance().setBroCentrale(br);
     }
 }

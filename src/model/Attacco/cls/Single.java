@@ -19,4 +19,9 @@ public class Single extends AbstractAttacco {
         return AtkTraiettoriaEnum.TERRENO;
     }
 
+    @Override
+    public int pixelTraiettoria() {
+        return 150;
+    }
+
 }

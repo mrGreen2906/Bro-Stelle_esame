@@ -14,7 +14,7 @@ public class ArtilleryBro extends AbstractLongRangeBro {
 
     @Override
     public Color getColor() {
-        return Color.OLIVE;
+        return Color.CYAN;
     }
 
     @Override

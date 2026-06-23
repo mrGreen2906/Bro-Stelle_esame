@@ -11,7 +11,7 @@ public class Main extends Application {
     public void start(Stage stage) throws Exception {
         MainView m = MainView.getInstance();
         stage.setTitle("Bro-Stelle");
-        stage.setScene(new Scene(m, 300, 300));
+        stage.setScene(new Scene(m, 500, 450));
         stage.show();
     }
 

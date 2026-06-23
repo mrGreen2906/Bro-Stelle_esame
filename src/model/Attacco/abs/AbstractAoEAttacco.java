@@ -12,4 +12,6 @@ public abstract class AbstractAoEAttacco extends  AbstractAttacco{
     public AtkPortataEnum getPortata() {
         return AtkPortataEnum.MEDIA;
     }
+
+    public int pixelTraiettoria(){ return 100;}
 }
