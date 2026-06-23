@@ -1,4 +1,4 @@
-package controller.comparators;
+package controller;
 
 import javafx.scene.control.Alert;
 import model.Nemico;

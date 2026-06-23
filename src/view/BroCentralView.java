@@ -14,9 +14,9 @@ import javafx.scene.text.Text;
 public class BroCentralView extends StackPane {
 
     private BroCentralController b;
-    Circle c;
-    Rectangle r;
-    Text t1, t2, t3;
+    private Circle c;
+    private Rectangle r;
+    private Text t1, t2, t3;
 
     public BroCentralView(String i1, String i2, String i3, int radius, Color col, BroCentralController b) {
         this.b = b;

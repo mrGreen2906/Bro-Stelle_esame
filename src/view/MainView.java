@@ -2,7 +2,7 @@ package view;
 
 import controller.BroCentralController;
 import controller.VetrinaController;
-import controller.comparators.NemicoController;
+import controller.NemicoController;
 import javafx.geometry.Pos;
 import javafx.scene.control.Button;
 import javafx.scene.layout.BorderPane;

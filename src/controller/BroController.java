@@ -1,9 +1,7 @@
 package controller;
 
-import javafx.scene.control.Alert;
 import javafx.scene.paint.Color;
 import model.Bro.BroInt;
-import model.exceptions.LivelloMaxException;
 import view.BroView;
 import view.MainView;
 
@@ -21,17 +19,11 @@ public class BroController {
         return v;
     }
 
-    public void setV(BroView v) {
-        this.v = v;
-    }
 
     public BroInt getM() {
         return m;
     }
 
-    public void setM(BroInt m) {
-        this.m = m;
-    }
 
     public Color getColor(){
         return this.m.getColor();

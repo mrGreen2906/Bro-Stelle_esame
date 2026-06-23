@@ -1,10 +1,9 @@
 package view;
 
-import controller.comparators.NemicoController;
+import controller.NemicoController;
 import javafx.scene.control.Button;
 import javafx.scene.layout.HBox;
 import javafx.scene.text.Text;
-import model.Nemico;
 
 
 
