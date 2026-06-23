@@ -8,16 +8,27 @@ import model.Bro.abs.AbstractBro;
 public class TankBro extends AbstractBro {
     private static final int MAX_VITA=10500;
     private static final int MIN_VITA=8000;
-    private VelocitaEnum vel;
+
     public TankBro(String n, int l, AttaccoInt a) {
-        super(n, l, a);
-        this.vel=VelocitaEnum.LENTA;
+        super(n, l, a,VelocitaEnum.LENTA);
+
     }
 
     @Override
-    public void aumentaVita() {
+    public int aumentaVita() {
+        if(!(super.getVita() >getVitaMax()))
+            return getVitaMin()*10/100;
+        return 0;
+    }
 
-        if(super.get)
+    @Override
+    public int getVitaMax() {
+        return MAX_VITA;
+    }
+
+    @Override
+    public int getVitaMin() {
+        return MIN_VITA;
     }
 
     @Override
